@@ -8,7 +8,7 @@ phases:
       - echo "Installing pnpm..."
       - npm install -g pnpm
       - echo "Installing dependencies..."
-      - pnpm install
+      - pnpm install --prod
   build:
     commands:
       - echo "Building Next.js app..."
@@ -17,3 +17,4 @@ artifacts:
   files:
     - appspec.yml
     - '**/*'
+    - '!node_modules/**'
