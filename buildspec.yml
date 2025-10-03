@@ -17,4 +17,3 @@ artifacts:
   files:
     - appspec.yml
     - '**/*'
-  base-directory: .next
