@@ -15,5 +15,6 @@ phases:
       - pnpm build
 artifacts:
   files:
+    - appspec.yml
     - '**/*'
   base-directory: .next
