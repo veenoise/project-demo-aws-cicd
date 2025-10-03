@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing pnpm..."
+      - npm install -g pnpm
+      - echo "Installing dependencies..."
+      - pnpm install
+  build:
+    commands:
+      - echo "Building Next.js app..."
+      - pnpm build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .next
