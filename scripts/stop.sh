@@ -1,6 +1,8 @@
 #!/bin/bash
 cd /var/www/nextjs-app
 echo "Stopping Next.js app..."
+pwd
+ls -l
 
 set -e 
 
