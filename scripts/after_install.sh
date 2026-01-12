@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-cd /var/www/nextjs-app
-sudo chown -R ubuntu:ubuntu /var/www/nextjs-app
+APP_DIR="/var/www/nextjs-app"
+sudo chown -R ubuntu:ubuntu $APP_DIR
 
 export CI=true
 export NVM_DIR="$HOME/.nvm"
