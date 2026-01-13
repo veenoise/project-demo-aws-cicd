@@ -12,7 +12,7 @@ export CI=true
 export NVM_DIR="$HOME/.nvm"
 export TMPDIR="$HOME/tmp"
 
-chown -R $USER:$USER "$APP_DIR"
+sudo chown -R $USER:$USER "$APP_DIR"
 
 mkdir -p "$TMPDIR"
 
