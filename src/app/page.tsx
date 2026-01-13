@@ -16,7 +16,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-extrabold tracking-tight"
         >
-          Build Something <span className="text-indigo-400">Cool</span>
+          AWS CodePipeline <span className="text-indigo-400">POC</span>
         </motion.h1>
 
         <motion.p
@@ -25,8 +25,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mt-6 max-w-2xl text-lg text-zinc-300"
         >
-          A modern Next.js website with smooth animations, clean UI, and
-          production-ready structure.
+          A cool CI/CD Pipeline that sideloads the building process to other servers for a better server uptime.
         </motion.p>
 
         <motion.div
