@@ -12,7 +12,7 @@ This repo is for the CodePipeline POC utilizing GitHub as Source, AWS CodeBuild 
 6. Create a CodeDeploy application (codepipeline-poc-codedeploy-application) and deployment group (codepipeline-poc-codedeploy-group)
 7. Choose Amazon EC2 instances and filter the instances by tag (Name:codepipeline-poc)
 8. Create a GitHub connection (make-connection)
-9. Create a CodeBuild project (codepipeline-poc-codebuild) and store the artifact to S3 earlier. Choose `New service role` (codepipeline-poc-codebuild-role)
+9. Create a CodeBuild project (codepipeline-poc-codebuild) and store the artifact to S3 earlier. Don't use webhooks. Choose `New service role` (codepipeline-poc-codebuild-role)
 10. Create the CodePipeline. Custom pipeline. Choose `New service role` (codepipeline-poc-role). (Superseded, Custom location for S3). Login using GitHub App. CodePipeline default for output artifact. Enable webhook events. 
 11. Modify the IAM role for codepipeline-poc-role, attach AmazonS3FullAccess, AWSCodeBuildDeveloperAccess, AWSCodeDeployDeployerAccess
 12. Modify the IAM role for codepipeline-poc-codebuild-role, attach AmazonS3FullAccess, 
