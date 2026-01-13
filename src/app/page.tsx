@@ -45,16 +45,16 @@ export default function Home() {
       <section className="px-6 pb-32 max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
         {[{
           icon: <Rocket className="w-8 h-8 text-indigo-400" />,
-          title: "Fast",
-          desc: "Built with Next.js App Router and optimized performance."
+          title: "Scalable Pipeline",
+          desc: "Multi-stage pipeline that grows with your application."
         }, {
           icon: <Sparkles className="w-8 h-8 text-indigo-400" />,
-          title: "Beautiful",
-          desc: "Minimal design with Tailwind CSS and animations."
+          title: "Secure Deployments",
+          desc: "Built-in approvals and security controls for safe releases."
         }, {
           icon: <Globe className="w-8 h-8 text-indigo-400" />,
-          title: "Scalable",
-          desc: "Production-ready structure you can grow with."
+          title: "Automated CI/CD",
+          desc: "Fast, automated build and deployment for every code change."
         }].map((f, i) => (
           <motion.div
             key={i}
@@ -66,7 +66,7 @@ export default function Home() {
             <Card className="bg-zinc-900 border-zinc-800 rounded-2xl shadow-lg">
               <CardContent className="p-8">
                 {f.icon}
-                <h3 className="mt-4 text-xl font-semibold">{f.title}</h3>
+                <h3 className="mt-4 text-xl text-zinc-400 font-semibold">{f.title}</h3>
                 <p className="mt-2 text-zinc-400">{f.desc}</p>
               </CardContent>
             </Card>
