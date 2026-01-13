@@ -16,7 +16,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-extrabold tracking-tight"
         >
-          AWS CodePipeline <span className="text-indigo-400">POC</span>
+          AWS CodePipeline 2 <span className="text-indigo-400">POC</span>
         </motion.h1>
 
         <motion.p
